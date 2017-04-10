@@ -1,0 +1,29 @@
+.cohort-button {
+  background : #000;
+  border-radius : 5px;
+  color : #fff;
+  text-align: center;
+  display:inline-block;
+  padding:5px 15px 5px 15px;
+  margin: 5px 5px 5px 5px;
+}
+
+.show {
+  visibility: visible;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.error {
+  color : red;
+}
+
+.selected {
+  background: green;
+}
+
+#group-form {
+  display : block;
+}

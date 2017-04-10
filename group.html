@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Group Maker</title>
+  <link rel="stylesheet" href="group.css">
+  <script src="group-data.js"></script>
+  <script src="group.js"></script>
+  <script src="runner.js"></script>
+</head>
+<body>
+  <div id="cohorts"></div>
+  <div id="options-form" class="hide">
+    <div id="error"></div>
+    <form id="group-form">
+      <div>
+        <label for="size">Group Size: </label>
+        <input type="text" placeholder="Group Size" name="size" value="2" id="group-size" />
+      </div>
+      <div>
+        <label for="preserve-partial">Allow Partial Groups: </label>
+        <input type="checkbox" name="preserve-partial" id="preserve-partial" />
+      </div>
+      <input type="submit" value="Create" id="create-btn" />
+    </form>
+  </div>
+  <div id="groups"></div>
+</body>
+</html>

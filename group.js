@@ -42,7 +42,7 @@ var groupModule = (function(data){
       var groupDiv = document.createElement('div');
       var names = '';
       g.forEach(function(n, idx){
-        if (idx > 0) names += " )^-^( ";
+        if (idx > 0) names += " |==| ";
         names += n;
       });
       groupDiv.textContent = `Group ${i + 1}: ${names}`;

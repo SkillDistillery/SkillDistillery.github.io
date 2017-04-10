@@ -87,7 +87,7 @@ var groupModule = (function(data){
     clearGroups();
     checkForErrors()
     var size = document.getElementById('group-size').value;
-    size = parseInt(size);
+    size = Math.abs(parseInt(size));
     if (isNaN(size)) {
       addError("Only enter numbers");
       return;

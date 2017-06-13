@@ -9,9 +9,10 @@
 }
 
 #create-btn {
-  background : #000;
+  border : none;
+  background : #313031;
   border-radius : 5px;
-  color : #313031;
+  color : #fff;
   text-align: center;
   display:inline-block;
   padding:5px 15px 5px 15px;

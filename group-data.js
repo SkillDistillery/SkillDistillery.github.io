@@ -9,29 +9,40 @@ var data = {
   //   'Geoff'
   // ],
 
-  sd9 : [
-    'Chandan',
-    'David',
-    'Greg T.',
-    'Greg E.',
-    'Shaun',
-    'Stephen',
-    'Stefan',
-    'Dennis',
-    'Daniel',
-    'Matt',
-    'Seth'
-  ],
+//   sd9 : [
+//     'Chandan',
+//     'David',
+//     'Greg T.',
+//     'Greg E.',
+//     'Shaun',
+//     'Stephen',
+//     'Stefan',
+//     'Dennis',
+//     'Daniel',
+//     'Matt',
+//     'Seth'
+//   ],
 
   sd10 : [
     'Nancy',
-    'Jacob',
     'Eric',
     'Ben',
     'Miles',
     'Sebastian',
     'Michael',
     'Paul',
-    'Ryan'
-  ]
+    'Ryan',
+  ],
+  
+  sd11 : [
+    'Andy',
+    'Jacob',
+    'Jake',
+    'Moses',
+    'Travis',
+    'Bryan',
+    'Connor',
+    'Charlie',
+    'Michael',
+  ],
 }

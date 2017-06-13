@@ -8,6 +8,16 @@
   margin: 5px 5px 5px 5px;
 }
 
+#create-btn {
+  background : #000;
+  border-radius : 5px;
+  color : #313031;
+  text-align: center;
+  display:inline-block;
+  padding:5px 15px 5px 15px;
+  margin: 5px 5px 5px 5px; 
+}
+
 .show {
   visibility: visible;
 }

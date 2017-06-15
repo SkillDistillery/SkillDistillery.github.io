@@ -51,7 +51,7 @@ var groupModule = (function(data){
   }
 
   var buildGroups = function(size) {
-    var numShuffles = Math.floor((Math.random() * 1000) /10);
+    var numShuffles = Math.floor((Math.random() * 100) /10);
     var groups = [];
     while (numShuffles > 0) {
       shuffle(currentCohort);
@@ -97,8 +97,20 @@ var groupModule = (function(data){
       return;
     }
     
-    buildGroups(size);
+    timeout(size, 25, 0);
   };
+
+  function timeout(groupSize, time, iteration) {
+    if (iteration < 30) {
+      setTimeout(function() {
+        clearGroups();
+        buildGroups(groupSize);
+        timeout(groupSize,time,++iteration);
+      }, time)
+    }
+    clearGroups();
+    buildGroups(groupSize);
+  }
 
   var createGroupListener = function() {
     var btn = document.getElementById('create-btn');

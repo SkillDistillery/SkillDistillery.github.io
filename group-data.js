@@ -37,7 +37,6 @@ var data = {
   sd11 : [
     'Andy',
     'Jacob',
-    'Jake',
     'Moses',
     'Travis',
     'Bryan',

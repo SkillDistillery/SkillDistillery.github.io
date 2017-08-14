@@ -38,7 +38,7 @@ var data = {
     'Andy',
     'Jacob',
     'Moses',
-    'Travis',
+//    'Travis',
     'Bryan',
     'Connor',
     'Charlie',

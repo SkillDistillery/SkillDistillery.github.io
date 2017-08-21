@@ -1,0 +1,58 @@
+[
+  {
+    "name" : "Baltimore Orioles",
+    "url" : "http://www.Orioles.MLB.com"
+  },
+  {
+    "name" : "Boston Redsox",
+    "url" : "http://www.Redsox.MLB.com"
+  },
+  {
+    "name" : "Chicago White Sox",
+    "url" : "http://www.Whitesox.MLB.com"
+  },
+  {
+    "name" : "Cleveland Indians",
+    "url" : "http://www.Indians.MLB.com"
+  },
+  {
+    "name" : "Detroit Tigers",
+    "url" : "http://www.Tigers.MLB.com"
+  },
+  {
+    "name" : "Kansas City Royals",
+    "url" : "http://www.Royals.MLB.com"
+  },
+  {
+    "name" : "Los Angeles Angels",
+    "url" : "http://www.Angels.MLB.com"
+  },
+  {
+    "name" : "Minnesota Twins",
+    "url" : "http://www.Twins.MLB.com"
+  },
+  {
+    "name" : "New York Yankees",
+    "url" : "http://www.Yankees.MLB.com"
+  },
+  {
+    "name" : "Oakland Athletics",
+    "url" : "http://www.Athletics.MLB.com"
+  },
+  {
+    "name" : "Seattle Mariners",
+    "url" : "http://www.Mariners.MLB.com"
+  },
+  {
+    "name" : "Tampa Bay Rays",
+    "url" : "http://www.Rays.MLB.com"
+  },
+  {
+    "name" : "Texas Rangers",
+    "url" : "http://www.Rangers.MLB.com"
+  },
+  {
+    "name" : "Toronto Blue Jays",
+    "url" : "http://www.Bluejays.MLB.com"
+  }
+]

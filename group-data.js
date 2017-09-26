@@ -34,14 +34,47 @@ var data = {
     'Ryan',
   ],
 */
-  sd11 : [
-    'Andy',
-    'Jacob',
-    'Moses',
-//    'Travis',
-    'Bryan',
-    'Connor',
-    'Charlie',
-    'Michael',
-  ],
+//   sd11 : [
+//     'Andy',
+//     'Jacob',
+//     'Moses',
+// //    'Travis',
+//     'Bryan',
+//     'Connor',
+//     'Charlie',
+//     'Michael',
+//   ],
+sd12 : [
+  'Mustafa',
+  'Brian',
+  'Meira',
+  'Eric',
+  'Chris (Bianchi)',
+  'Jimmy',
+  'David',
+  'Doug',
+  'Sam',
+  'Stan',
+  'Daniel',
+  'Chris (Bartkewicz)',
+  'Jackie'
+],
+
+sd13 : [
+  'Jacob',
+  'Airik',
+  'David (Stumpe)',
+  'Jason',
+  'Greg',
+  'Rosanne',
+  'Alexis',
+  'Aaron',
+  'Hunter',
+  'Michael',
+  'Chris',
+  'Jen',
+  'David (Chirdon)',
+  'Alex',
+  'Ekubay'
+]
 }

@@ -51,7 +51,7 @@ sd12 : [
   'Eric',
   'Chris (Bianchi)',
   'Jimmy',
-  'David',
+//   'David',
   'Doug',
   'Sam',
   'Stan',

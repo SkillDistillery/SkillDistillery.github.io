@@ -70,7 +70,6 @@ sd13 : [
   'Alexis',
   'Aaron',
   'Hunter',
-  'Michael',
   'Chris',
   'Jen',
   'David (Chirdon)',

@@ -74,6 +74,5 @@ sd13 : [
   'Jen',
   'David (Chirdon)',
   'Alex',
-  'Ekubay'
 ]
 }

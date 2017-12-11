@@ -60,19 +60,19 @@ sd12 : [
   'Jackie'
 ],
 
-sd13 : [
-  'Jacob',
-  'Airik',
-  'David (Stumpe)',
-  'Jason',
-  'Greg',
-  'Rosanne',
-  'Alexis',
-  'Aaron',
-  'Hunter',
-  'Chris',
-  'Jen',
-  'David (Chirdon)',
-  'Alex',
-]
+  sd13 : [
+    'Jacob',
+    'Airik',
+    'David (Stumpe)',
+    'Jason',
+    'Greg',
+    'Rosanne',
+    'Alexis',
+    'Aaron',
+    'Hunter',
+    'Chris',
+    'Jen',
+    'David (Chirdon)',
+    'Alex',
+  ]
 }

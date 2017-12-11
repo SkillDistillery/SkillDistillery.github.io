@@ -16,7 +16,7 @@
   text-align: center;
   display:inline-block;
   padding:5px 15px 5px 15px;
-  margin: 5px 5px 5px 5px; 
+  margin: 5px 5px 5px 5px;
 }
 
 .show {
@@ -37,4 +37,26 @@
 
 #group-form {
   display : block;
+}
+
+.active {
+  border : none;
+  background :  #77ef77;
+  border-radius : 5px;
+  color : #fff;
+  text-align: center;
+  display:inline-block;
+  padding: 5px 15px 5px 15px;
+  margin: 5px 15px 5px 35px;
+}
+
+.inactive {
+  border : none;
+  background :  #f23e4a;
+  border-radius : 5px;
+  color : #fff;
+  text-align: center;
+  display:inline-block;
+  padding: 5px 15px 5px 15px;
+  margin: 5px 15px 5px 35px;
 }

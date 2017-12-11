@@ -3,6 +3,62 @@ var groupModule = (function(data){
 
   var currentCohort;
 
+  var activityButtonCallback = function(e) {
+    e.preventDefault();
+    var id = e.target.getAttribute('data-id');
+    currentCohort.forEach(function(student, idx, arr) {
+      if (student.id == id) {
+        arr[idx].active = !arr[idx].active;
+      }
+    })
+    if (e.target.textContent === 'Active') {
+      e.target.textContent = 'Inactive';
+      e.target.className = 'inactive';
+    } else {
+      e.target.textContent = 'Active';
+      e.target.className = 'active';
+    }
+    console.log(currentCohort);
+  }
+
+  var buildActivityTable = function() {
+    var container = document.getElementById('groups');
+    var div = document.createElement('div');
+    currentCohort
+      .sort(function(a,b) {
+        return a.name > b.name;
+      })
+      .forEach(function(student, idx, arr) {
+        var row = document.createElement('div');
+        var btn = document.createElement('button');
+        if (student.active) {
+          btn.className = 'active';
+          btn.textContent = 'Active';
+        } else {
+          btn.className = 'inactive';
+          btn.textContent = 'Inactive';
+        }
+        btn.setAttribute('data-id', student.id);
+        btn.addEventListener('click', activityButtonCallback);
+        row.appendChild(btn);
+        var nameSpan = document.createElement('span');
+        nameSpan.textContent = student.name;
+        row.appendChild(nameSpan);
+        div.appendChild(row);
+      })
+    container.appendChild(div);
+  }
+
+  var convertCohortToObjects = function(cohort) {
+    return cohort.map(function(x, idx) {
+      return {
+        id : idx,
+        name : x,
+        active : true
+      };
+    })
+  }
+
   var shuffle = function (arr) {
     var randomNum, valueAtCurrIdx;
     for (var currIdx = arr.length; currIdx !== 0; currIdx--) {
@@ -36,14 +92,14 @@ var groupModule = (function(data){
     var div = document.getElementById('groups');
     var preservePartialGroups = document.getElementById('preserve-partial').checked;
     if (!preservePartialGroups) {
-      groupArr = addIncompleteGroupToOtherGroups(groupArr, size);      
+      groupArr = addIncompleteGroupToOtherGroups(groupArr, size);
     }
     groupArr.forEach(function(g, i){
       var groupDiv = document.createElement('div');
       var names = '';
       g.forEach(function(n, idx){
         if (idx > 0) names += " |==| ";
-        names += n;
+        names += n.name;
       });
       groupDiv.textContent = `Group ${i + 1}: ${names}`;
       div.appendChild(groupDiv);
@@ -51,15 +107,18 @@ var groupModule = (function(data){
   }
 
   var buildGroups = function(size) {
+    var activeStudents = currentCohort.filter(function(student) {
+      return student.active;
+    })
     var numShuffles = Math.floor((Math.random() * 100) /10);
     var groups = [];
     while (numShuffles > 0) {
-      shuffle(currentCohort);
+      shuffle(activeStudents);
       numShuffles--;
     };
 
-    for (var i = 0 ; i < currentCohort.length ; i += size) {
-      groups.push(currentCohort.slice(i, i+size));
+    for (var i = 0 ; i < activeStudents.length ; i += size) {
+      groups.push(activeStudents.slice(i, i+size));
     }
     appendGroupsToDom(groups,size);
     return groups;
@@ -96,7 +155,7 @@ var groupModule = (function(data){
       addError(`Enter a group size less than the number of students (${currentCohort.length})`);
       return;
     }
-    
+
     timeout(size, 25, 0);
   };
 
@@ -141,8 +200,9 @@ var groupModule = (function(data){
     removeSelectedClass();
     clearGroups();
     e.target.className += ' selected';
-    currentCohort = data[e.target.textContent.toLowerCase()];
+    currentCohort = convertCohortToObjects(data[e.target.textContent.toLowerCase()]);
     showGroupBuilderForm();
+    buildActivityTable();
   };
 
   var buildCohortSelector = function() {

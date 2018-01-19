@@ -1,1 +1,111 @@
-<h1>Hello World!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="style.css">
+  <title>SD: Java Install MacOS</title>
+</head>
+<body>
+  <div class="container">
+    <h1>
+      <img src="images/sd_logo.jpg" alt="SD Logo" />
+      SkillDistillery
+    </h1>
+
+    <h3 class="page-title">Java Install (Mac OS X)</h3>
+
+    <h4>Overview</h4>
+
+    <div>
+      At Skill Distillery our core focus is the Java programming language and it's extended libraries and frameworks, as such, it is imperative that you have Java installed on your computer.
+    </div>
+
+    <hr>
+
+    <h4>1. Download the JDK</h4>
+
+    <div>
+      The  "<em>Java Platform, Standard Edition Development Kit (JDK)</em>" contains everything you need to get started with Java.
+    </div>
+
+    <ul>
+      <li>
+        <div>Go to Oracle's Java Download site: <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html</a></div>
+      </li>
+      <li>
+        (1) Select the "<em>Accept License Agreement</em>" radio button
+      </li>
+      <li>
+        (2) Click on the macOS download link (this will begin downloading the JDK)
+      </li>
+    </ul>
+
+    <div class="img-container">
+      <img class="desc-img" src="images/javaInstall.png" alt="Oracle Download Page">
+    </div>
+
+    <hr>
+
+    <h4>2. Install the JDK</h4>
+      <div>
+        In the previous step, you downloaded the <em>JDK</em> in as a <em>.dmg</em> file named something like <em>jdk-8u151_macosx-x64_bin.dmg</em>. Now we are going to install the <em>JDK</em> from that file.
+      </div>
+      <ul>
+        <li>In <em>Finder</em> go to your <em>Downloads</em> folder.</li>
+        <li>
+          Double click on the <em>jdk-8u151_macosx-x64_bin.dmg</em> file.
+          <ul>
+            <li>This will open another window with the Java logo, an open parcel and the words "Java Developer Kit" at the top.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="img-container">
+        <img src="images/openJavaDMG.gif" alt="Open DMG File" class="desc-img">
+      </div>
+
+      <ul>
+        <li>Double click on the image of the package on the window which opened, this will open an installation wizard.</li>
+        <li>Click <em>Continue</em>.</li>
+        <li>When prompted click _Install_, you will then be prompted to enter your administrative password to complete the installation, this is the same password you use to unlock your computer.</li>
+      </ul>
+
+      <div class="img-container">
+        <img src="images/installJavaPackage.gif" alt="Install Java Package" class="desc-img">
+      </div>
+
+    <hr>
+
+    <h4>3. Check Java Version</h4>
+
+    <ul>
+      <li>Open <em>Terminal</em> with <em>Spotlight Search</em> (the hotkeys are `command (⌘)` + `SPACE BAR`)</li>
+      <li>Type `java -version` to see the installed Java version.</li>
+      <li>Type `javac -version` to see the installed javac version.</li>
+    </ul>
+
+    <div class="img-container">
+      <img src="images/checkJavaVersion.gif" alt="Check Java Version" class="desc-img">
+    </div>
+
+    <hr>
+
+    <h4>4. Your Done!!!</h4>
+      <div>Go make awesome things with Java!</div>
+
+    <hr>
+  </div>
+</body>
+</html>

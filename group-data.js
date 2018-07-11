@@ -44,21 +44,21 @@ var data = {
 //     'Charlie',
 //     'Michael',
 //   ],
-sd12 : [
-  'Mustafa',
-  'Brian',
-  'Meira',
-  'Eric',
-  'Chris (Bianchi)',
-  'Jimmy',
-//   'David',
-  'Doug',
-  'Sam',
-  'Stan',
-  'Daniel',
-  'Chris (Bartkewicz)',
-  'Jackie'
-],
+// sd12 : [
+//   'Mustafa',
+//   'Brian',
+//   'Meira',
+//   'Eric',
+//   'Chris (Bianchi)',
+//   'Jimmy',
+// //   'David',
+//   'Doug',
+//   'Sam',
+//   'Stan',
+//   'Daniel',
+//   'Chris (Bartkewicz)',
+//   'Jackie'
+// ],
 
   sd13 : [
     'Jacob',
@@ -93,5 +93,14 @@ sd12 : [
     'Mark',
     'Julian',
     'Dora'
-  ]
+  ],
+  
+    sd15 : [
+    'Alex',
+    'Jared',
+    'Joseph',
+    'Jeremy',
+    'Thomas',
+    'Wilson'
+  ],
 }

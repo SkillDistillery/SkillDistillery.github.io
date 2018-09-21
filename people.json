@@ -1,0 +1,47 @@
+[
+    {
+        "fname": "Aaron",
+        "lname": "Aaronson",
+        "age": 9,
+        "tags": [
+            "child",
+            "scholar"
+        ],
+        "address": {
+            "street": "555 N Apple Street",
+            "city": "Andover",
+            "state": "MA",
+            "zip": 17890
+        }
+    },
+    {
+        "fname": "Bob",
+        "lname": "Bobbers",
+        "age": 47,
+        "tags": [
+            "middle aged",
+            "non-voter"
+        ],
+        "address": {
+            "street": "555 N Banana Street",
+            "city": "Boston",
+            "state": "MA",
+            "zip": 17810
+        }
+    },
+    {
+        "fname": "Cindy",
+        "lname": "Cinders",
+        "age": 64,
+        "tags": [
+            "awesome",
+            "giving"
+        ],
+        "address": {
+            "street": "555 N Coconut Street",
+            "city": "Cedar",
+            "state": "MA",
+            "zip": 17818
+        }
+    }
+]
